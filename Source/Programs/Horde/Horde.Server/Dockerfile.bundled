@@ -1,0 +1,4 @@
+FROM horde-server-bare:latest
+COPY Dashboard/ /app/DashboardApp/
+COPY Server/Tools/ /app/Tools/
+COPY Server/appsettings.json /app/

@@ -1,0 +1,31 @@
+diff --git a/llvm/lib/IR/AutoUpgrade.cpp b/llvm/lib/IR/AutoUpgrade.cpp
+index 9342e10b5..6443baeb4 100644
+--- a/llvm/lib/IR/AutoUpgrade.cpp
++++ b/llvm/lib/IR/AutoUpgrade.cpp
+@@ -31,11 +31,16 @@
+ #include "llvm/IR/LLVMContext.h"
+ #include "llvm/IR/Module.h"
+ #include "llvm/IR/Verifier.h"
++#include "llvm/Support/CommandLine.h"
+ #include "llvm/Support/ErrorHandling.h"
+ #include "llvm/Support/Regex.h"
+ #include <cstring>
+ using namespace llvm;
+ 
++static cl::opt<bool>
++    DisableAutoUpgradeDebugInfo("disable-auto-upgrade-debug-info",
++                                cl::desc("Disable autoupgrade of debug info"));
++
+ static void rename(GlobalValue *GV) { GV->setName(GV->getName() + ".old"); }
+ 
+ // Upgrade the declarations of the SSE4.1 ptest intrinsics whose arguments have
+@@ -4485,6 +4490,9 @@ Constant *llvm::UpgradeBitCastExpr(unsigned Opc, Constant *C, Type *DestTy) {
+ /// Check the debug info version number, if it is out-dated, drop the debug
+ /// info. Return true if module is modified.
+ bool llvm::UpgradeDebugInfo(Module &M) {
++  if (DisableAutoUpgradeDebugInfo)
++    return false;
++
+   unsigned Version = getDebugMetadataVersionFromModule(M);
+   if (Version == DEBUG_METADATA_VERSION) {
+     bool BrokenDebugInfo = false;

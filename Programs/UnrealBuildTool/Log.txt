@@ -1,0 +1,101 @@
+Log started at 12/08/2024 17:05:24 (2024-12-08T09:05:24Z)
+No config file at E:\UE5\UE5SourceCode\Engine\Restricted\NotForLicensees\Programs\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\ProgramData\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\Zeen\AppData\Local\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at D:\Users\Zeen\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Configuration will be read from:
+  E:\UE5\UE5SourceCode\Engine\Saved\UnrealBuildTool\BuildConfiguration.xml
+  C:\Users\Zeen\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Setting temp directory to 'C:\Users\Zeen\AppData\Local\Temp\UnrealBuildTool\55e737f5'
+    Registering build platform: UnrealBuildTool.AndroidPlatformFactory
+        Registering build platform: Android - buildable: False
+    Registering build platform: UnrealBuildTool.IOSPlatformFactory
+        Registering build platform: IOS - buildable: False
+    Registering build platform: UnrealBuildTool.LinuxPlatformFactory
+        Registering build platform: Linux - buildable: False
+        Registering build platform: LinuxArm64 - buildable: False
+    Registering build platform: UnrealBuildTool.MacPlatformFactory
+        Registering build platform: Mac - buildable: False
+    Registering build platform: UnrealBuildTool.TVOSPlatformFactory
+        Registering build platform: TVOS - buildable: False
+    Registering build platform: UnrealBuildTool.WindowsPlatformFactory
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+Found Windows 10 SDK version 10.0.22000.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.22000.0 at C:\Program Files (x86)\Windows Kits\10
+Found Windows 10 SDK version 10.0.22621.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.22621.0 at C:\Program Files (x86)\Windows Kits\10
+Win64 Installed SDK(s): MinVersion_Sdk=10.0.18362.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.22621.0, Version_AutoSdk=10.0.19041.0, CurrentVersion_AutoSdk=
+        Registering build platform: Win64 - buildable: True
+    Registering build platform: UnrealBuildTool.VisionOSPlatformFactory
+        Registering build platform: VisionOS - buildable: False
+Command line: E:\UE5\UE5SourceCode\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll Debug Win64 -Project=D:/Yuqings/UnrealProjects/Homework1_FPS/Homework1_FPS.uproject -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
+Log file: E:\UE5\UE5SourceCode\Engine\Programs\UnrealBuildTool\Log.txt
+
+Found VisualStudio2022 installation: D:\Program Files\Microsoft Visual Studio\2022\Preview (Product=Microsoft.VisualStudio.Product.Community, Version=17.13.35507.96)
+Found Visual Studio toolchain: D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.36.32532 (Family=14.36.32532, FamilyRank=2, Version=14.36.32546, Is64Bit=True, ReleaseChannel=Preview, Architecture=x64, Error=False, Redist=D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Redist\MSVC\14.42.34430)
+Found Visual Studio toolchain: D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33130 (Family=14.38.33130, FamilyRank=0, Version=14.38.33143, Is64Bit=True, ReleaseChannel=Preview, Architecture=x64, Error=False, Redist=D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Redist\MSVC\14.38.33130)
+Found Visual Studio toolchain: D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.43.34604 (Family=14.43.34604, FamilyRank=5, Version=14.43.34604, Is64Bit=True, ReleaseChannel=Preview, Architecture=x64, Error=False, Redist=D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Redist\MSVC\14.42.34430)
+Using 'git status' to determine working set for adaptive non-unity build (E:\UE5\UE5SourceCode).
+Waiting for 'git status' command to complete
+@progress push 5%
+@progress 'Generating code...' 0%
+Generated code is up to date.
+@progress 'Generating code...' 67%
+@progress 'Generating code...' 100%
+@progress pop
+Homework1_FPSPlayerController.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSPlayerController.gen.cpp.obj" doesn't exist.
+Homework1_FPSPlayerController.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSPlayerController.gen.cpp.dep.json" doesn't exist.
+Homework1_FPSProjectile.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSProjectile.cpp.obj" doesn't exist.
+Homework1_FPSProjectile.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSProjectile.cpp.dep.json" doesn't exist.
+Homework1_FPSProjectile.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSProjectile.gen.cpp.obj" doesn't exist.
+Homework1_FPSProjectile.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSProjectile.gen.cpp.dep.json" doesn't exist.
+TP_PickUpComponent.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_PickUpComponent.cpp.obj" doesn't exist.
+TP_PickUpComponent.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_PickUpComponent.cpp.dep.json" doesn't exist.
+TP_PickUpComponent.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_PickUpComponent.gen.cpp.obj" doesn't exist.
+TP_PickUpComponent.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_PickUpComponent.gen.cpp.dep.json" doesn't exist.
+TP_WeaponComponent.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_WeaponComponent.cpp.obj" doesn't exist.
+TP_WeaponComponent.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_WeaponComponent.cpp.dep.json" doesn't exist.
+TP_WeaponComponent.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_WeaponComponent.gen.cpp.obj" doesn't exist.
+TP_WeaponComponent.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\TP_WeaponComponent.gen.cpp.dep.json" doesn't exist.
+UnrealEditor-Homework1_FPS-Win64-Debug.dll: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Binaries\Win64\UnrealEditor-Homework1_FPS-Win64-Debug.dll" doesn't exist.
+UnrealEditor-Homework1_FPS-Win64-Debug.dll: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Binaries\Win64\UnrealEditor-Homework1_FPS-Win64-Debug.pdb" doesn't exist.
+UnrealEditor-Homework1_FPS-Win64-Debug.lib: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\UnrealEditor-Homework1_FPS-Win64-Debug.lib" doesn't exist.
+Homework1_FPS.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPS.cpp.obj" doesn't exist.
+Homework1_FPS.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPS.cpp.dep.json" doesn't exist.
+SharedPCH.UnrealEd.Project.ValApi.Cpp20.cpp: Produced item "E:\UE5\UE5SourceCode\Engine\Intermediate\Build\Win64\x64\UnrealEditor\Debug\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj" doesn't exist.
+SharedPCH.UnrealEd.Project.ValApi.Cpp20.cpp: Produced item "E:\UE5\UE5SourceCode\Engine\Intermediate\Build\Win64\x64\UnrealEditor\Debug\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.dep.json" doesn't exist.
+SharedPCH.UnrealEd.Project.ValApi.Cpp20.cpp: Produced item "E:\UE5\UE5SourceCode\Engine\Intermediate\Build\Win64\x64\UnrealEditor\Debug\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch" doesn't exist.
+Homework1_FPS.init.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPS.init.gen.cpp.obj" doesn't exist.
+Homework1_FPS.init.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPS.init.gen.cpp.dep.json" doesn't exist.
+Homework1_FPSCharacter.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSCharacter.cpp.obj" doesn't exist.
+Homework1_FPSCharacter.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSCharacter.cpp.dep.json" doesn't exist.
+Homework1_FPSCharacter.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSCharacter.gen.cpp.obj" doesn't exist.
+Homework1_FPSCharacter.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSCharacter.gen.cpp.dep.json" doesn't exist.
+Homework1_FPSGameMode.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSGameMode.cpp.obj" doesn't exist.
+Homework1_FPSGameMode.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSGameMode.cpp.dep.json" doesn't exist.
+Homework1_FPSGameMode.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSGameMode.gen.cpp.obj" doesn't exist.
+Homework1_FPSGameMode.gen.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSGameMode.gen.cpp.dep.json" doesn't exist.
+Homework1_FPSPlayerController.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSPlayerController.cpp.obj" doesn't exist.
+Homework1_FPSPlayerController.cpp: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\Win64\x64\UnrealEditor\Debug\Homework1_FPS\Homework1_FPSPlayerController.cpp.dep.json" doesn't exist.
+Homework1_FPSEditor-Win64-Debug.target: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Binaries\Win64\Homework1_FPSEditor-Win64-Debug.target" doesn't exist.
+Homework1_FPSEditor-Win64-Debug.target: Produced item "D:\Yuqings\UnrealProjects\Homework1_FPS\Binaries\Win64\UnrealEditor-Win64-Debug.modules" doesn't exist.
+Building would modify the following engine files:
+
+E:\UE5\UE5SourceCode\Engine\Intermediate\Build\Win64\x64\UnrealEditor\Debug\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.dep.json
+E:\UE5\UE5SourceCode\Engine\Intermediate\Build\Win64\x64\UnrealEditor\Debug\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj
+E:\UE5\UE5SourceCode\Engine\Intermediate\Build\Win64\x64\UnrealEditor\Debug\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch
+
+Please rebuild from an IDE instead.
+Total execution time: 30.96 seconds
+CompilationResultException: FailedDueToEngineChange
+   at UnrealBuildTool.BuildMode.BuildAsync(TargetMakefile[] Makefiles, List`1 TargetDescriptors, BuildConfiguration BuildConfiguration, BuildOptions Options, FileReference WriteOutdatedActionsFile, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 718
+   at UnrealBuildTool.BuildMode.BuildAsync(List`1 TargetDescriptors, BuildConfiguration BuildConfiguration, ISourceFileWorkingSet WorkingSet, BuildOptions Options, FileReference WriteOutdatedActionsFile, ILogger Logger, Boolean bSkipPreBuildTargets) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 411
+   at UnrealBuildTool.BuildMode.ExecuteAsync(CommandLineArguments Arguments, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 252
+   at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 660
+WriteFileIfChanged() wrote 0 changed files of 0 requested writes.
+Timeline:
+
+[ 0.000]
+[ 0.000](+31.139) <unknown>
+[31.139]

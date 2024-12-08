@@ -1,0 +1,14 @@
+diff --git a/compiler-rt/lib/builtins/cpu_model.c b/compiler-rt/lib/builtins/cpu_model.c
+index f5ad530..0efe435 100644
+--- a/compiler-rt/lib/builtins/cpu_model.c
++++ b/compiler-rt/lib/builtins/cpu_model.c
+@@ -923,6 +923,9 @@ int CONSTRUCTOR_ATTRIBUTE __cpu_indicator_init(void) {
+ #ifndef HWCAP_SB
+ #define HWCAP_SB (1 << 29)
+ #endif
++#ifndef HWCAP_CRC32
++#define HWCAP_CRC32 (1 << 7)
++#endif
+ 
+ #ifndef AT_HWCAP2
+ #define AT_HWCAP2 26

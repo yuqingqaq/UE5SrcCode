@@ -1,0 +1,2 @@
+FROM horde-server-bare:latest
+COPY --from=hordedashboard-public:latest /usr/share/nginx/html/ /app/DashboardApp/

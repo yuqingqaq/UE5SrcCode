@@ -1,0 +1,16 @@
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.Serialization.deps.json
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.Serialization.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.Serialization.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.Core.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.IoHash.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.IoHash.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\bin\Debug\net6.0\EpicGames.Core.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGames.Serialization.csproj.AssemblyReference.cache
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGames.Serialization.GeneratedMSBuildEditorConfig.editorconfig
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGames.Serialization.csproj.CoreCompileInputs.cache
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGames.Serialization.sourcelink.json
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGame.13665197.Up2Date
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGames.Serialization.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\refint\EpicGames.Serialization.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\EpicGames.Serialization.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Serialization\obj\Debug\net6.0\ref\EpicGames.Serialization.dll

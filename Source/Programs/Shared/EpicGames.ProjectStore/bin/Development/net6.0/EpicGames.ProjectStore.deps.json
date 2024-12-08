@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EpicGames.ProjectStore/1.0.0": {
+        "runtime": {
+          "EpicGames.ProjectStore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EpicGames.ProjectStore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "horde/job_rpc_messages.proto";
+import "horde/horde_rpc_messages.proto";
+
+package Horde;
+
+option csharp_namespace = "Horde.Common.Rpc";
+
+service JobRpc {
+
+	rpc GetStream(GetStreamRequest) returns (GetStreamResponse);
+
+	rpc GetJob(GetJobRequest) returns (GetJobResponse);
+	rpc UpdateJob(UpdateJobRequest) returns (google.protobuf.Empty);
+
+	rpc BeginBatch(BeginBatchRequest) returns (BeginBatchResponse);
+	rpc FinishBatch(FinishBatchRequest) returns (google.protobuf.Empty);
+
+	rpc BeginStep(BeginStepRequest) returns (BeginStepResponse);
+	rpc UpdateStep(UpdateStepRequest) returns (google.protobuf.Empty);
+	rpc GetStep(GetStepRequest) returns (GetStepResponse);
+
+	rpc UpdateGraph(UpdateGraphRequest) returns (UpdateGraphResponse);
+	rpc CreateEvents(CreateEventsRequest) returns (google.protobuf.Empty);
+
+	rpc UploadArtifact(stream UploadArtifactRequest) returns (UploadArtifactResponse);
+	rpc UploadTestData(stream UploadTestDataRequest) returns (UploadTestDataResponse);
+
+	rpc CreateArtifact(CreateJobArtifactRequest) returns (CreateJobArtifactResponse);
+	rpc CreateArtifactV2(CreateJobArtifactRequestV2) returns (CreateJobArtifactResponseV2);
+	rpc GetArtifact(GetJobArtifactRequest) returns (GetJobArtifactResponse);
+
+	rpc CreateReport(CreateReportRequest) returns (CreateReportResponse);
+}
+

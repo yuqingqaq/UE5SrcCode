@@ -1,0 +1,1 @@
+﻿ALTER TABLE ugs_db.Badges ADD COLUMN Metadata JSON NOT NULL DEFAULT ( JSON_OBJECT('Links', JSON_ARRAY()) );

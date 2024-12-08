@@ -1,0 +1,16 @@
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Perforce.Native.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Perforce.Native.so
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Perforce.Native.dylib
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Perforce.deps.json
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Perforce.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Perforce.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Core.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\bin\Development\net6.0\EpicGames.Core.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\EpicGames.Perforce.csproj.AssemblyReference.cache
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\EpicGames.Perforce.GeneratedMSBuildEditorConfig.editorconfig
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\EpicGames.Perforce.csproj.CoreCompileInputs.cache
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\EpicGames.Perforce.csproj.CopyComplete
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\EpicGames.Perforce.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\refint\EpicGames.Perforce.dll
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\EpicGames.Perforce.pdb
+E:\UE5\UE5SourceCode\Engine\Source\Programs\Shared\EpicGames.Perforce\obj\Development\net6.0\ref\EpicGames.Perforce.dll

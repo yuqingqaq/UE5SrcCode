@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="UE::UniversalObjectLocator::TLocatorPayload&lt;*&gt;">
+    <DisplayString>{ Payload,nr }</DisplayString>
+    <Expand>
+      <ExpandedItem>Payload,nr</ExpandedItem>
+    </Expand>
+  </Type>
+
+  <Type Name="FUniversalObjectLocatorFragment">
+    <Intrinsic Name="GetTypes" Expression="((FDebuggableFragmentType*)GDebuggingState->DynamicPtrs[(GDebuggingState->StringEntryBlocks32 - strstr(GDebuggingState->StringEntryBlocks32, &quot;UOL&quot;))/32])"></Intrinsic>
+    <Intrinsic Name="GetType" Expression="GetTypes() + FragmentType.Handle"></Intrinsic>
+    <Intrinsic Name="GetInlinePayload" SideEffect="true" Expression="GetType()->DebuggingAssistant.Object->MakePayloadVisualizer((const void*)Data)"></Intrinsic>
+    <Intrinsic Name="GetHeapPayload" SideEffect="true" Expression="GetType()->DebuggingAssistant.Object->MakePayloadVisualizer(*(const void**)Data)"></Intrinsic>
+    <Intrinsic Name="GetPayload" SideEffect="true" Category="Data" Expression="bIsInline ? GetInlinePayload() : GetHeapPayload(),nr"></Intrinsic>
+
+    <DisplayString Condition="bIsInitialized == 0 &amp;&amp; FragmentType.Handle == 0xff">Empty</DisplayString>
+    <DisplayString Condition="bIsInitialized == 0 &amp;&amp; FragmentType.Handle != 0xff">CORRUPT</DisplayString>
+    <DisplayString Condition="bIsInitialized == 1 &amp;&amp; FragmentType.Handle == 0xff">CORRUPT</DisplayString>
+    <DisplayString Condition="bIsInitialized == 1 &amp;&amp; FragmentType.Handle != 0xff">{{ Type={ GetType()->PayloadType.DebugPtr->NamePrivate }, Payload=&lt;&lt;needs refresh&gt;&gt; }}</DisplayString>
+
+    <Expand>
+      <Item Name="PayloadType">GetType()->PayloadType.DebugPtr</Item>
+      <Item Name="Payload">GetPayload(),nr</Item>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>

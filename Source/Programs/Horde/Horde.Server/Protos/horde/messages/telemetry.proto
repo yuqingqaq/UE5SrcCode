@@ -1,0 +1,108 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "HordeCommon.Rpc.Messages.Telemetry";
+
+// Wrap different event types inside a message as oneof's cannot be repeated
+message WrappedTelemetryEvent {
+	oneof Event {
+		AgentMetadataEvent AgentMetadata = 1;
+		AgentCpuMetricsEvent Cpu = 2;
+		AgentMemoryMetricsEvent Mem = 3;
+	}
+}
+
+// Metadata about a unique agent instance
+// Data known to be required are declared as fields. Any additional metadata can be encoded as properties.
+// These should not change during the lifetime of the process/agent machine. If they do, encode them in metric events.
+message AgentMetadataEvent {
+	// A 64-bit hash of agent metadata of the properties below
+	int64 AgentId = 11;
+	
+	// IP address
+	google.protobuf.StringValue Ip = 1;
+
+	// DNS hostname
+	google.protobuf.StringValue Hostname = 2;
+
+	// Datacenter region
+	google.protobuf.StringValue Region = 3;
+
+	// Datacenter rack or availability zone
+	google.protobuf.StringValue AvailabilityZone = 4;
+
+	// Environment name, such as "prod" or "dev"
+	google.protobuf.StringValue Environment = 5;
+
+	// Version of the running Horde Agent
+	google.protobuf.StringValue AgentVersion = 6;
+
+	// Operating system name
+	google.protobuf.StringValue Os = 7;
+
+	// Operating system version
+	google.protobuf.StringValue OsVersion = 8;
+
+	// Processor architecture (for example x86, x86_64, aarch64 etc)
+	google.protobuf.StringValue Architecture = 9;
+
+	// List of pool IDs this agent is currently a member of
+	repeated string PoolIds = 12;
+
+	// Generic key/value properties
+	map<string, string> Properties = 10;
+}
+
+// Describes what lease, job or batch ID an agent currently is executing. All are null when agent is idling.
+message ExecutionMetadata {
+	google.protobuf.StringValue LeaseId = 1;
+	google.protobuf.StringValue JobId = 2;
+	google.protobuf.StringValue JobBatchId = 3;
+}
+
+message AgentCpuMetricsEvent {
+	// Timestamp when event was generated
+	google.protobuf.Timestamp Timestamp = 6;
+	
+	// A 64-bit hash of agent metadata 
+	int64 AgentId = 5;
+	
+	// Metadata about leases/jobs currently being executed by agent
+	ExecutionMetadata ExecutionMetadata = 1;
+
+	// Percentage of time the CPU was busy executing code in user space
+	float User = 2;
+
+	// Percentage of time the CPU was busy executing code in kernel space
+	float System = 3;
+
+	// Percentage of time the CPU was idling
+	float Idle = 4;
+}
+
+message AgentMemoryMetricsEvent {
+	// Timestamp when event was generated
+	google.protobuf.Timestamp Timestamp = 7;
+	
+	// A 64-bit hash of agent metadata 
+	int64 AgentId = 6;
+
+	// Metadata about leases/jobs currently being executed by agent
+	ExecutionMetadata ExecutionMetadata = 1;
+
+	// Total memory installed (kibibytes)
+	uint32 Total = 2;
+
+	// Available memory (kibibytes)
+	uint32 Free = 3;
+
+	// Used memory (kibibytes)
+	uint32 Used = 4;
+
+	// Used memory (percentage)
+	float UsedPercentage = 5;
+}

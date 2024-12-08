@@ -1,0 +1,110 @@
+Log started at 12/08/2024 16:49:49 (2024-12-08T08:49:49Z)
+No config file at E:\UE5\UE5SourceCode\Engine\Restricted\NotForLicensees\Programs\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\ProgramData\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\Zeen\AppData\Local\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at D:\Users\Zeen\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Configuration will be read from:
+  E:\UE5\UE5SourceCode\Engine\Saved\UnrealBuildTool\BuildConfiguration.xml
+  C:\Users\Zeen\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Setting temp directory to 'C:\Users\Zeen\AppData\Local\Temp\UnrealBuildTool\55e737f5'
+    Registering build platform: UnrealBuildTool.AndroidPlatformFactory
+        Registering build platform: Android - buildable: False
+    Registering build platform: UnrealBuildTool.IOSPlatformFactory
+        Registering build platform: IOS - buildable: False
+    Registering build platform: UnrealBuildTool.LinuxPlatformFactory
+        Registering build platform: Linux - buildable: False
+        Registering build platform: LinuxArm64 - buildable: False
+    Registering build platform: UnrealBuildTool.MacPlatformFactory
+        Registering build platform: Mac - buildable: False
+    Registering build platform: UnrealBuildTool.TVOSPlatformFactory
+        Registering build platform: TVOS - buildable: False
+    Registering build platform: UnrealBuildTool.WindowsPlatformFactory
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+Found Windows 10 SDK version 10.0.22000.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.22000.0 at C:\Program Files (x86)\Windows Kits\10
+Found Windows 10 SDK version 10.0.22621.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.22621.0 at C:\Program Files (x86)\Windows Kits\10
+Win64 Installed SDK(s): MinVersion_Sdk=10.0.18362.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.22621.0, Version_AutoSdk=10.0.19041.0, CurrentVersion_AutoSdk=
+        Registering build platform: Win64 - buildable: True
+    Registering build platform: UnrealBuildTool.VisionOSPlatformFactory
+        Registering build platform: VisionOS - buildable: False
+Log file: E:\UE5\UE5SourceCode\Engine\Programs\UnrealBuildTool\Log_GPF.txt
+
+Resolved project argument D:/Yuqings/UnrealProjects/Homework1_FPS/Homework1_FPS.uproject to D:\Yuqings\UnrealProjects\Homework1_FPS\Homework1_FPS.uproject
+Registering project generator UnrealBuildTool.AndroidProjectGenerator for Android
+Registering project generator UnrealBuildTool.IOSProjectGenerator for IOS
+Registering project generator UnrealBuildTool.LinuxProjectGenerator for Linux
+Registering project generator UnrealBuildTool.LinuxProjectGenerator for LinuxArm64
+Registering project generator UnrealBuildTool.MacProjectGenerator for Mac
+Registering project generator UnrealBuildTool.TVOSProjectGenerator for TVOS
+Registering project generator UnrealBuildTool.WindowsProjectGenerator for Win64
+Registering project generator UnrealBuildTool.VisionOSProjectGenerator for VisionOS
+
+---   SDK INFO START   ---
+
+Some Platforms were skipped due to invalid SDK setup: Mac, IOS, Android, Linux, LinuxArm64, TVOS.
+See the log file for detailed information
+
+---   SDK INFO END   ---
+
+
+Generating VisualStudio project files:
+Discovering modules, targets and source code for project...
+Updating E:\UE5\UE5SourceCode\Engine\Intermediate\ProjectFiles\PrimaryProjectName.txt: contents have changed. Saving previous version to E:\UE5\UE5SourceCode\Engine\Intermediate\ProjectFiles\PrimaryProjectName.txt.old.
+Updating E:\UE5\UE5SourceCode\Engine\Intermediate\ProjectFiles\PrimaryProjectPath.txt: contents have changed. Saving previous version to E:\UE5\UE5SourceCode\Engine\Intermediate\ProjectFiles\PrimaryProjectPath.txt.old.
+Found VisualStudio2022 installation: D:\Program Files\Microsoft Visual Studio\2022\Preview (Product=Microsoft.VisualStudio.Product.Community, Version=17.13.35507.96)
+Found Visual Studio toolchain: D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.36.32532 (Family=14.36.32532, FamilyRank=2, Version=14.36.32546, Is64Bit=True, ReleaseChannel=Preview, Architecture=x64, Error=False, Redist=D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Redist\MSVC\14.42.34430)
+Found Visual Studio toolchain: D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33130 (Family=14.38.33130, FamilyRank=0, Version=14.38.33143, Is64Bit=True, ReleaseChannel=Preview, Architecture=x64, Error=False, Redist=D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Redist\MSVC\14.38.33130)
+Found Visual Studio toolchain: D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.43.34604 (Family=14.43.34604, FamilyRank=5, Version=14.43.34604, Is64Bit=True, ReleaseChannel=Preview, Architecture=x64, Error=False, Redist=D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Redist\MSVC\14.42.34430)
+Detected supported platforms: Win64, Mac, IOS, Android, Linux, LinuxArm64, TVOS, VisionOS
+Compiling E:\UE5\UE5SourceCode\Engine\Intermediate\Build\BuildRules\UE5Rules.dll: UnrealBuildTool.dll is newer
+Adding event matcher: CompileEventMatcher
+Adding event matcher: LinkEventMatcher
+Adding event matcher: MicrosoftEventMatcher
+Adding event matcher: XoreaxEventMatcher
+Compiling E:\UE5\UE5SourceCode\Engine\Intermediate\Build\BuildRules\UE5ProgramRules.dll: UnrealBuildTool.dll is newer
+Adding event matcher: CompileEventMatcher
+Adding event matcher: LinkEventMatcher
+Adding event matcher: MicrosoftEventMatcher
+Adding event matcher: XoreaxEventMatcher
+Compiling D:\Yuqings\UnrealProjects\Homework1_FPS\Intermediate\Build\BuildRules\Homework1_FPSModuleRules.dll: Assembly does not exist
+Total execution time: 59.11 seconds
+Unhandled exception: System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at System.Runtime.InteropServices.Marshal.AllocHGlobal(IntPtr cb)
+   at System.Reflection.Internal.StreamMemoryBlockProvider.ReadMemoryBlockNoLock(Stream stream, Boolean isFileStream, Int64 start, Int32 size)
+   at System.Reflection.PortableExecutable.PEReader..ctor(Stream peStream, PEStreamOptions options, Int32 size)
+   at Microsoft.CodeAnalysis.ModuleMetadata.CreateFromStream(Stream peStream, PEStreamOptions options)
+   at Microsoft.CodeAnalysis.MetadataReference.CreateFromFile(Stream peStream, String path, MetadataReferenceProperties properties, DocumentationProvider documentation)
+   at UnrealBuildTool.DynamicCompilation.CompileAssembly(FileReference OutputAssemblyPath, IEnumerable`1 SourceFileNames, ILogger Logger, IEnumerable`1 ReferencedAssembies, IEnumerable`1 PreprocessorDefines, Boolean TreatWarningsAsErrors) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 162
+   at UnrealBuildTool.DynamicCompilation.CompileAndLoadAssembly(FileReference OutputAssemblyPath, IEnumerable`1 SourceFileNames, ILogger Logger, IEnumerable`1 ReferencedAssembies, IEnumerable`1 PreprocessorDefines, Boolean DoNotCompile, Boolean ForceCompile, Boolean TreatWarningsAsErrors) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 341
+   at UnrealBuildTool.RulesAssembly..ctor(RulesScope Scope, IReadOnlyList`1 BaseDirs, IReadOnlyList`1 Plugins, IReadOnlyDictionary`2 ModuleFileToContext, IReadOnlyList`1 TargetFiles, FileReference AssemblyFileName, Boolean bContainsEngineModules, Nullable`1 DefaultBuildSettings, Boolean bReadOnly, Boolean bSkipCompile, Boolean bForceCompile, RulesAssembly Parent, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:line 155
+   at UnrealBuildTool.RulesCompiler.<>c__DisplayClass9_0.<CreateProjectRulesAssembly>b__0(FileReference _) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 332
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at UnrealBuildTool.RulesCompiler.CreateProjectRulesAssembly(FileReference ProjectFileName, Boolean bUsePrecompiled, Boolean bSkipCompile, Boolean bForceCompile, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 247
+   at UnrealBuildTool.ProjectFileGenerator.AddProjectsForAllTargets(PlatformProjectGeneratorCollection PlatformProjectGenerators, List`1 AllGames, List`1 AllTargetFiles, String[] Arguments, List`1 EngineProjects, List`1 GameProjects, Dictionary`2 ProjectFileToUProjectFile, Dictionary`2 ProgramProjects, Dictionary`2 RulesAssemblies, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 2774
+   at UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments, Boolean bCacheDataForEditor, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 1038
+   at UnrealBuildTool.GenerateProjectFilesMode.ExecuteAsync(CommandLineArguments Arguments, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:line 65
+   at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 660
+Unhandled exception: OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at System.Runtime.InteropServices.Marshal.AllocHGlobal(IntPtr cb)
+   at System.Reflection.Internal.StreamMemoryBlockProvider.ReadMemoryBlockNoLock(Stream stream, Boolean isFileStream, Int64 start, Int32 size)
+   at System.Reflection.PortableExecutable.PEReader..ctor(Stream peStream, PEStreamOptions options, Int32 size)
+   at Microsoft.CodeAnalysis.ModuleMetadata.CreateFromStream(Stream peStream, PEStreamOptions options)
+   at Microsoft.CodeAnalysis.MetadataReference.CreateFromFile(Stream peStream, String path, MetadataReferenceProperties properties, DocumentationProvider documentation)
+   at UnrealBuildTool.DynamicCompilation.CompileAssembly(FileReference OutputAssemblyPath, IEnumerable`1 SourceFileNames, ILogger Logger, IEnumerable`1 ReferencedAssembies, IEnumerable`1 PreprocessorDefines, Boolean TreatWarningsAsErrors) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 162
+   at UnrealBuildTool.DynamicCompilation.CompileAndLoadAssembly(FileReference OutputAssemblyPath, IEnumerable`1 SourceFileNames, ILogger Logger, IEnumerable`1 ReferencedAssembies, IEnumerable`1 PreprocessorDefines, Boolean DoNotCompile, Boolean ForceCompile, Boolean TreatWarningsAsErrors) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 341
+   at UnrealBuildTool.RulesAssembly..ctor(RulesScope Scope, IReadOnlyList`1 BaseDirs, IReadOnlyList`1 Plugins, IReadOnlyDictionary`2 ModuleFileToContext, IReadOnlyList`1 TargetFiles, FileReference AssemblyFileName, Boolean bContainsEngineModules, Nullable`1 DefaultBuildSettings, Boolean bReadOnly, Boolean bSkipCompile, Boolean bForceCompile, RulesAssembly Parent, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:line 155
+   at UnrealBuildTool.RulesCompiler.<>c__DisplayClass9_0.<CreateProjectRulesAssembly>b__0(FileReference _) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 332
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at UnrealBuildTool.RulesCompiler.CreateProjectRulesAssembly(FileReference ProjectFileName, Boolean bUsePrecompiled, Boolean bSkipCompile, Boolean bForceCompile, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 247
+   at UnrealBuildTool.ProjectFileGenerator.AddProjectsForAllTargets(PlatformProjectGeneratorCollection PlatformProjectGenerators, List`1 AllGames, List`1 AllTargetFiles, String[] Arguments, List`1 EngineProjects, List`1 GameProjects, Dictionary`2 ProjectFileToUProjectFile, Dictionary`2 ProgramProjects, Dictionary`2 RulesAssemblies, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 2774
+   at UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments, Boolean bCacheDataForEditor, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 1038
+   at UnrealBuildTool.GenerateProjectFilesMode.ExecuteAsync(CommandLineArguments Arguments, ILogger Logger) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:line 65
+   at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in E:\UE5\UE5SourceCode\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 660
+WriteFileIfChanged() wrote 2 changed files of 2 requested writes.
+Timeline:
+
+[ 0.000]
+[ 0.000](+59.389) <unknown>
+[59.389]

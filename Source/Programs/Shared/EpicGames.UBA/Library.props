@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Windows -->
+  <Choose>
+    <When Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">
+      <!-- x64 -->
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaHost.dll')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaHost.dll" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\win-x64\native\UbaHost.dll</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaDetours.dll')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaDetours.dll" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\win-x64\native\UbaDetours.dll</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <!-- arm64 -->
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaHost.dll')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaHost.dll" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\win-arm64\native\UbaHost.dll</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaDetours.dll')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaDetours.dll" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\win-arm64\native\UbaDetours.dll</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+    </When>
+  </Choose>
+
+  <!-- Linux -->
+  <Choose>
+    <When Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">
+      <!-- x64 -->
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaHost.so')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaHost.so" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\linux-x64\native\libUbaHost.so</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaDetours.so')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaDetours.so" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\linux-x64\native\libUbaDetours.so</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <!-- arm64 -->
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaHost.so')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaHost.so" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\linux-arm64\native\libUbaHost.so</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaDetours.so')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaDetours.so" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\linux-arm64\native\libUbaDetours.so</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+    </When>
+  </Choose>
+
+  <!-- Mac -->
+  <Choose>
+    <When Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">
+      <!-- universal -->
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaHost.dylib')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaHost.dylib" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\osx-x64\native\libUbaHost.dylib</TargetPath>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaHost.dylib" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\osx-arm64\native\libUbaHost.dylib</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+      <ItemGroup Condition="Exists('..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaDetours.dylib')">
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaDetours.dylib" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\osx-x64\native\libUbaDetours.dylib</TargetPath>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaDetours.dylib" UpToDateCheckInput="true">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <TargetPath>runtimes\osx-arm64\native\libUbaDetours.dylib</TargetPath>
+        </ContentWithTargetPath>
+      </ItemGroup>
+    </When>
+  </Choose>
+
+  <!-- Pack -->
+  <!-- x64 -->
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaHost.dll')">
+    <None Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaHost.dll">
+      <Link>runtimes\win-x64\native\UbaHost.dll</Link>
+      <PackagePath>runtimes\win-x64\native\UbaHost.dll</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaDetours.dll')">
+    <None Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\x64\UbaDetours.dll">
+      <Link>runtimes\win-x64\native\UbaDetours.dll</Link>
+      <PackagePath>runtimes\win-x64\native\UbaDetours.dll</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+  <!-- arm64 -->
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaHost.dll')">
+    <None Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaHost.dll">
+      <Link>runtimes\win-arm64\native\UbaHost.dll</Link>
+      <PackagePath>runtimes\win-arm64\native\UbaHost.dll</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaDetours.dll')">
+    <None Include="..\..\..\..\Binaries\Win64\UnrealBuildAccelerator\arm64\UbaDetours.dll">
+      <Link>runtimes\win-arm64\native\UbaDetours.dll</Link>
+      <PackagePath>runtimes\win-arm64\native\UbaDetours.dll</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+
+  <!-- Linux -->
+  <!-- x64 -->
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaHost.so')">
+    <None Include="..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaHost.so">
+      <Link>runtimes\linux-x64\native\libUbaHost.so</Link>
+      <PackagePath>runtimes\linux-x64\native\libUbaHost.so</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaDetours.so')">
+    <None Include="..\..\..\..\Binaries\Linux\UnrealBuildAccelerator\libUbaDetours.so">
+      <Link>runtimes\linux-x64\native\libUbaDetours.so</Link>
+      <PackagePath>runtimes\linux-x64\native\libUbaDetours.so</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+  <!-- arm64 -->
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaHost.so')">
+    <None Include="..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaHost.so">
+      <Link>runtimes\linux-arm64\native\libUbaHost.so</Link>
+      <PackagePath>runtimes\linux-arm64\native\libUbaHost.so</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaDetours.so')">
+    <None Include="..\..\..\..\Binaries\LinuxArm64\UnrealBuildAccelerator\libUbaDetours.so">
+      <Link>runtimes\linux-arm64\native\libUbaDetours.so</Link>
+      <PackagePath>runtimes\linux-arm64\native\libUbaDetours.so</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+
+  <!-- Mac -->
+  <!-- universal -->
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaHost.dylib')">
+    <None Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaHost.dylib">
+      <Link>runtimes\osx-x64\native\libUbaHost.dylib</Link>
+      <PackagePath>runtimes\osx-x64\native\libUbaHost.dylib</PackagePath>
+    </None>
+    <None Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaHost.dylib">
+      <Link>runtimes\osx-arm64\native\libUbaHost.dylib</Link>
+      <PackagePath>runtimes\osx-arm64\native\libUbaHost.dylib</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition="Exists('..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaDetours.dylib')">
+    <None Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaDetours.dylib">
+      <Link>runtimes\osx-x64\native\libUbaDetours.dylib</Link>
+      <PackagePath>runtimes\osx-x64\native\libUbaDetours.dylib</PackagePath>
+      <Pack>true</Pack>
+    </None>
+    <None Include="..\..\..\..\Binaries\Mac\UnrealBuildAccelerator\libUbaDetours.dylib">
+      <Link>runtimes\osx-arm64\native\libUbaDetours.dylib</Link>
+      <PackagePath>runtimes\osx-arm64\native\libUbaDetours.dylib</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+
+</Project>

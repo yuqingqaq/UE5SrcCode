@@ -1,0 +1,127 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+syntax = "proto3";
+
+package Horde;
+
+option csharp_namespace = "Horde.Common.Rpc";
+
+enum JobArtifactType {
+
+	// Untyped artifact value
+	Unknown = 0;
+
+	// Buildgraph temp storage
+	TempStorage = 1;
+
+	// Saved trace data from the machine (logs, etc...)
+	Saved = 2;
+
+	// Test data
+	TestData = 3;
+
+	// Trace data
+	Trace = 4;
+}
+
+message CreateJobArtifactRequest {
+
+	// The job identifier
+	string JobId = 1;
+
+	// The job step identifier
+	string StepId = 2;
+
+	// Artifact type
+	JobArtifactType Type = 4;
+
+	// (Optional) Namespace containing the artifact, if it already exists
+	string NamespaceId = 5;
+
+	// (Optional) Ref name for the artifact, if it already exists
+	string RefName = 6;
+}
+
+message CreateJobArtifactResponse {
+
+	// Id for the new artifact
+	string Id = 1;
+
+	// Namespace for uploading data
+	string NamespaceId = 2;
+
+	// The ref name for the final root node
+	string RefName = 3;
+
+	// Token allowing the ref to be written
+	string Token = 4;
+}
+
+message CreateJobArtifactRequestV2 {
+
+	// The job identifier
+	string JobId = 1;
+
+	// The job step identifier
+	string StepId = 2;
+
+	// Name for the artifact
+	string Name = 7;
+
+	// Artifact type
+	string Type = 8;
+
+	// Description for the artifact
+	string Description = 9;
+
+	// Keys for the new artifact
+	repeated string Keys = 10;
+
+	// Metadata for the new artifact
+	repeated string Metadata = 11;
+}
+
+message CreateJobArtifactResponseV2 {
+
+	// Id for the new artifact
+	string Id = 1;
+
+	// Namespace for uploading data
+	string NamespaceId = 2;
+
+	// The ref name for the final root node
+	string RefName = 3;
+
+	// Token allowing the ref to be written
+	string Token = 4;
+}
+
+message GetJobArtifactRequest {
+
+	// The job identifier
+	string JobId = 3;
+
+	// The job step identifier
+	string StepId = 4;
+
+	// Name for the artifact
+	string Name = 1;
+
+	// Artifact type
+	string Type = 5;
+}
+
+message GetJobArtifactResponse {
+
+	// Id for the new artifact
+	string Id = 1;
+
+	// Namespace for uploading data
+	string NamespaceId = 2;
+
+	// The ref name for the final root node
+	string RefName = 3;
+
+	// Access token for reading the artifact
+	string Token = 4;
+}
